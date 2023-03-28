@@ -11,7 +11,7 @@ class ImageProvider {
   factory ImageProvider() => _imageProvider;
 
   Client _client = Client();
-  static const String _apiKey = "ILnPPQBdVLX1cHcoQ9dyjDf0Tjs75amjQVTH6p9xtvg";
+  static const String _apiKey = "access key";
   static const String _baseUrl = "api.unsplash.com";
 
   //Get list of images based on the query
