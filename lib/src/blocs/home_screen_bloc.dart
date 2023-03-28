@@ -2,10 +2,10 @@ import 'dart:async';
 import 'dart:typed_data';
 import 'package:share/share.dart';
 import 'bloc_base.dart';
-import '../repositories/repository.dart';
+import 'package:pixel_perfect/src/repositories/repository.dart';
 import 'package:rxdart/rxdart.dart';
-import '../models/photos.dart';
-import '../repositories/state.dart';
+import 'package:pixel_perfect/src/models/photos.dart';
+import 'package:pixel_perfect/src/repositories/state.dart';
 
 class HomeScreenBloc extends BlocBase {
   static Repository _repository = Repository();

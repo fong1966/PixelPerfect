@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../blocs/home_screen_bloc.dart';
-import '../../models/photos.dart';
+import 'package:pixel_perfect/src/blocs/home_screen_bloc.dart';
+import 'package:pixel_perfect/src/models/photos.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -70,7 +70,8 @@ class _HomeScreenState extends State<HomeScreen> {
                               Flexible(
                                   child: Text(
                                 'Type a word',
-                                style: Theme.of(context).textTheme.headline4,
+                                style:
+                                    Theme.of(context).textTheme.headlineLarge,
                               ))
                             ],
                           ),
@@ -115,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Text(result.user!.name!),
                 Spacer(),
                 GestureDetector(
-                  onTap: (){
+                  onTap: () {
                     bloc.shareImage(result.urls!.regular!);
                   },
                   child: Icon(Icons.share, color: Colors.white),
