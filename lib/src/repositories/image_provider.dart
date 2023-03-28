@@ -23,8 +23,8 @@ class ImageProvider {
     response = await _client.get(Uri.https(_baseUrl, "/search/photos", {
       "page": "1", // page number
       "per_page": "100", // number of items per page
-      "query": query,
-      "client_id": _apiKey
+      "query": query, //Search terms.
+      "client_id": _apiKey //Access key
     }));
     if (response.statusCode == 200)
       return State<Photos>.success(Photos.fromMap(json.decode(response.body)));
